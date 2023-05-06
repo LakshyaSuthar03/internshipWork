@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+:root {
+  --black: #000000;
+  --white: #ffffff;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+a {
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+ul {
+  list-style: none;
+}
+ul a {
+  color: var(--white);
+}
+img {
+  height: auto;
+  width: 35%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.container {
+  width: 90vw;
+  margin: 0 auto;
+}
+.getToTop {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  position: fixed;
+}
+.navbar {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navLinks {
+  display: flex;
+  justify-content: space-evenly;
+}
+.logo {
+  flex: 1;
+  color: var(--white);
+}
+.navContainer {
+  flex: 1;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: auto;
+  color: var(--white);
+  overflow: hidden;
+}
+
+.heroImg {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: -32vh;
+  filter: brightness(25%);
+  /* display: none; */
+}
+.info {
+  width: 80%;
+  height: 20vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.cta {
+  width: 15%;
+  height: 30px;
+  cursor: pointer;
+  font-weight: 500;
+  border: none;
+}
+.heroCta:hover {
+  background-color: transparent;
+
+  border: 1px solid white;
+  color: var(--white);
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: auto;
+  color: var(--white);
+  overflow: hidden;
+
+  color: var(--black);
+}
+.aboutInfo {
+  flex: 1;
+}
+.aboutImageContainer {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutImg {
+  height: 50%;
+  width: auto;
+}
+
+.services {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.sectionTop h3 {
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+.servicesCardsSection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.servicesCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 30vh;
+  width: 25vw;
+  border: 2px solid black;
+  border-radius: 5%;
+}
+
+.portfolio {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.portfolioCardsSection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.portfolioCard {
+  text-align: center;
+  height: 30vh;
+  width: 25vw;
+  border: 2px solid black;
+  border-radius: 5%;
+}
+.portfolioCard a {
+  font-weight: 500;
+  color: var(--black);
+}
+.portfolioImg {
+  width: 45%;
+  height: auto;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.contact {
+  height: 100vh;
+  width: auto;
+}
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.contactSectionCards {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.locationInfo {
+  display: flex;
+  margin-top: 50px;
+}
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  width: max-content;
+  margin: auto;
+}
+textarea {
+  resize: vertical;
+}
+.formRow1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.formRow2 {
+  margin-bottom: 10px;
+}
+.formBtn {
+  margin-top: 20px;
+  height: 30px;
+  cursor: pointer;
+  border: none;
+  background-color: var(--black);
+  color: var(--white);
+}
+.formBtn:hover {
+  background-color: var(--white);
+  border: 2px solid var(--black);
+  color: var(--black);
+}
+.footer {
+  height: 15vh;
+  width: auto;
+  margin-top: 100px;
+  text-align: center;
+}
+.footer a {
+  color: var(--black);
+  font-weight: bold;
+}
+.contactTop {
+  text-align: center;
+}
+.contactTop h3 {
+  font-weight: 500;
+}
